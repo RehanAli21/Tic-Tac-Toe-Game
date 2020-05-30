@@ -1,0 +1,132 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{ text-align: center; }
+
+.container 
+{ 
+    margin-top: 100px;
+    width: 500px;
+    height: 400px;
+}
+
+.ms { margin: 20px; }
+
+.ps { padding: 5px; }
+
+.btn
+{
+    background-color: white;
+    border: 2px solid black;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.btn:active { transform: scale(.9); }
+
+input
+{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 40vw;
+    outline: none;
+    border-radius: 5px;
+}
+
+.sl { display: inline; }
+
+.left 
+{
+    float:left; 
+    color: green; 
+}
+
+.right { float: right; }
+
+.fw 
+{ 
+    width: 90%; 
+}
+
+.btn-div
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.noBorder 
+{ 
+    height: 100%;
+    border: none; 
+    outline: none;
+    font-family: monospace;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 3em;
+    color: white;
+}
+
+.bw { background-color: white; }
+
+#one
+{ 
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#two { border-bottom: 2px solid black; }
+
+#three
+{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#four { border-right: 2px solid black; }
+
+#six { border-left: 2px solid black; }
+
+#seven 
+{ 
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#eight { border-top: 2px solid black; }
+
+#nine
+{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.d-div
+{
+    width: 90%;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mm
+{
+    margin: 40px;
+}
+
+.ml
+{
+    margin: 60px;
+}
+
+.bf
+{
+    font-size: 50px;
+}
+
+.game, .end { display: none; }

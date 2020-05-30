@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Tac Game</title>
+
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+
+</head>
+<body>
+    <div>
+        <div class="container start" id="start">
+            <h1 class="ms">Tic Toc Tac Game</h1>
+            <input class="ms ps" type="text" name="p1name" placeholder="Player 1's Name" id="p1name" required="true">
+            </br>
+            <input class="ms ps" type="text" name="p2name" placeholder="Player 2's Name" id="p2name" required="true">
+            </br>
+            <button class="enter ms btn" onclick="startGame();" id="enter">Start Game</button>
+        </div>
+        <div class="game container" id="game">            
+            <h3 class="ms left" id="player1label"></h3>
+            <h3 class="ms right" id="player2label"></h3>
+            
+            <div class="ms fw btn-div">
+                <button id="one" class="bw noBorder game-btn" onclick="select('one');">A</button>
+                <button id="two" class="bw noBorder game-btn" onclick="select('two');">A</button>
+                <button id="three" class="bw noBorder game-btn" onclick="select('three');">A</button>
+                <button id="four" class="bw noBorder game-btn" onclick="select('four');">A</button>
+                <button id="five" class="bw noBorder game-btn" onclick="select('five');">A</button>
+                <button id="six" class="bw noBorder game-btn" onclick="select('six');">A</button>
+                <button id="seven" class="bw noBorder game-btn" onclick="select('seven');">A</button>
+                <button id="eight" class="bw noBorder game-btn" onclick="select('eight');">A</button>
+                <button id="nine" class="bw noBorder game-btn" onclick="select('nine');">A</button>
+            </div>
+
+            <div class="ms d-div" id="tdiv">
+                <button class="btn" onclick="tryAgain();">Try Again</button>
+                <button class="btn" onclick="Quite();">Quite</button>
+            </div>
+        </div>
+        <div class="container end" id="end">
+            <h1 class="ml bf">Game Over</h1>
+            <h1 id="wontext"></h1>
+            <button class="btn ml" onclick="Restart();">Restart Game</button>
+        </div>
+    </div>
+</body>
+</html>
